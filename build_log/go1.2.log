@@ -1,0 +1,407 @@
+# Building C bootstrap tool.
+cmd/dist
+
+# Building compilers and Go bootstrap tool for host, linux/arm.
+lib9
+libbio
+libmach
+misc/pprof
+cmd/addr2line
+cmd/nm
+cmd/objdump
+cmd/pack
+cmd/prof
+cmd/cc
+cmd/gc
+cmd/5l
+cmd/5a
+cmd/5c
+cmd/5g
+pkg/runtime
+pkg/errors
+pkg/sync/atomic
+pkg/sync
+pkg/io
+pkg/unicode
+pkg/unicode/utf8
+pkg/unicode/utf16
+pkg/bytes
+pkg/math
+pkg/strings
+pkg/strconv
+pkg/bufio
+pkg/sort
+pkg/container/heap
+pkg/encoding/base64
+pkg/syscall
+pkg/time
+pkg/os
+pkg/reflect
+pkg/fmt
+pkg/encoding
+pkg/encoding/json
+pkg/flag
+pkg/path/filepath
+pkg/path
+pkg/io/ioutil
+pkg/log
+pkg/regexp/syntax
+pkg/regexp
+pkg/go/token
+pkg/go/scanner
+pkg/go/ast
+pkg/go/parser
+pkg/os/exec
+pkg/os/signal
+pkg/net/url
+pkg/text/template/parse
+pkg/text/template
+pkg/go/doc
+pkg/go/build
+cmd/go
+
+# Building packages and commands for linux/arm.
+runtime
+errors
+sync/atomic
+sync
+io
+unicode
+unicode/utf8
+bytes
+hash
+math
+strconv
+crypto
+crypto/md5
+reflect
+encoding/binary
+debug/dwarf
+syscall
+time
+os
+fmt
+debug/elf
+debug/macho
+debug/pe
+sort
+flag
+go/token
+strings
+path/filepath
+go/scanner
+go/ast
+io/ioutil
+go/parser
+text/tabwriter
+go/printer
+os/exec
+cmd/cgo
+go/format
+path
+cmd/fix
+bufio
+container/heap
+encoding
+encoding/base64
+unicode/utf16
+encoding/json
+encoding/xml
+regexp/syntax
+regexp
+net/url
+text/template/parse
+text/template
+go/doc
+log
+go/build
+compress/flate
+hash/crc32
+compress/gzip
+crypto/subtle
+crypto/cipher
+crypto/aes
+crypto/des
+math/rand
+math/big
+crypto/elliptic
+crypto/ecdsa
+crypto/hmac
+crypto/rand
+crypto/rc4
+crypto/rsa
+crypto/sha1
+crypto/sha256
+crypto/dsa
+encoding/asn1
+crypto/x509/pkix
+encoding/hex
+encoding/pem
+runtime/cgo
+net
+crypto/x509
+crypto/tls
+mime
+net/textproto
+mime/multipart
+net/http
+os/signal
+cmd/go
+runtime/pprof
+cmd/gofmt
+cmd/yacc
+archive/tar
+archive/zip
+compress/bzip2
+compress/lzw
+hash/adler32
+compress/zlib
+container/list
+container/ring
+crypto/sha512
+database/sql/driver
+database/sql
+debug/gosym
+encoding/ascii85
+encoding/base32
+encoding/csv
+encoding/gob
+expvar
+hash/crc64
+hash/fnv
+html
+html/template
+image/color
+image
+image/color/palette
+image/draw
+image/gif
+image/jpeg
+image/png
+index/suffixarray
+log/syslog
+math/cmplx
+net/http/cgi
+net/http/cookiejar
+net/http/fcgi
+net/http/httptest
+net/http/httputil
+net/http/pprof
+net/mail
+net/rpc
+net/rpc/jsonrpc
+net/smtp
+os/user
+runtime/debug
+runtime/race
+testing
+testing/iotest
+testing/quick
+text/scanner
+
+# Testing packages.
+?   	cmd/cgo	[no test files]
+ok  	cmd/fix	0.216s
+ok  	cmd/go	0.109s
+ok  	cmd/gofmt	0.579s
+?   	cmd/yacc	[no test files]
+ok  	archive/tar	0.063s
+ok  	archive/zip	8.904s
+ok  	bufio	1.606s
+ok  	bytes	1.912s
+ok  	compress/bzip2	0.765s
+ok  	compress/flate	8.791s
+ok  	compress/gzip	0.117s
+ok  	compress/lzw	1.064s
+ok  	compress/zlib	21.150s
+ok  	container/heap	0.030s
+ok  	container/list	0.029s
+ok  	container/ring	0.188s
+?   	crypto	[no test files]
+ok  	crypto/aes	0.174s
+ok  	crypto/cipher	0.039s
+ok  	crypto/des	0.180s
+ok  	crypto/dsa	0.109s
+ok  	crypto/ecdsa	0.378s
+ok  	crypto/elliptic	0.717s
+ok  	crypto/hmac	0.042s
+ok  	crypto/md5	0.052s
+ok  	crypto/rand	0.211s
+ok  	crypto/rc4	0.686s
+ok  	crypto/rsa	3.833s
+ok  	crypto/sha1	0.038s
+ok  	crypto/sha256	0.049s
+ok  	crypto/sha512	0.065s
+ok  	crypto/subtle	0.100s
+ok  	crypto/tls	31.325s
+ok  	crypto/x509	12.590s
+?   	crypto/x509/pkix	[no test files]
+ok  	database/sql	0.447s
+ok  	database/sql/driver	0.028s
+ok  	debug/dwarf	0.055s
+ok  	debug/elf	0.129s
+ok  	debug/gosym	0.023s
+ok  	debug/macho	0.037s
+ok  	debug/pe	0.085s
+?   	encoding	[no test files]
+ok  	encoding/ascii85	0.029s
+ok  	encoding/asn1	0.045s
+ok  	encoding/base32	0.039s
+ok  	encoding/base64	0.044s
+ok  	encoding/binary	0.038s
+ok  	encoding/csv	0.041s
+ok  	encoding/gob	0.406s
+ok  	encoding/hex	0.030s
+ok  	encoding/json	1.919s
+ok  	encoding/pem	0.035s
+ok  	encoding/xml	0.194s
+ok  	errors	0.027s
+ok  	expvar	0.065s
+ok  	flag	0.036s
+ok  	fmt	0.595s
+ok  	go/ast	0.055s
+ok  	go/build	1.488s
+ok  	go/doc	0.803s
+ok  	go/format	0.146s
+ok  	go/parser	0.572s
+ok  	go/printer	6.027s
+ok  	go/scanner	0.067s
+ok  	go/token	0.636s
+?   	hash	[no test files]
+ok  	hash/adler32	0.114s
+ok  	hash/crc32	0.023s
+ok  	hash/crc64	0.026s
+ok  	hash/fnv	0.027s
+ok  	html	0.049s
+ok  	html/template	1.071s
+ok  	image	1.051s
+ok  	image/color	0.073s
+?   	image/color/palette	[no test files]
+ok  	image/draw	0.935s
+ok  	image/gif	0.709s
+ok  	image/jpeg	2.087s
+ok  	image/png	0.387s
+ok  	index/suffixarray	0.111s
+ok  	io	0.115s
+ok  	io/ioutil	0.043s
+ok  	log	0.046s
+ok  	log/syslog	2.390s
+ok  	math	0.054s
+ok  	math/big	6.045s
+ok  	math/cmplx	0.031s
+ok  	math/rand	0.310s
+ok  	mime	0.035s
+ok  	mime/multipart	5.991s
+ok  	net	5.698s
+ok  	net/http	21.681s
+ok  	net/http/cgi	3.514s
+ok  	net/http/cookiejar	0.116s
+ok  	net/http/fcgi	0.077s
+ok  	net/http/httptest	0.094s
+ok  	net/http/httputil	0.190s
+?   	net/http/pprof	[no test files]
+ok  	net/mail	0.067s
+ok  	net/rpc	0.192s
+ok  	net/rpc/jsonrpc	0.101s
+ok  	net/smtp	0.085s
+ok  	net/textproto	0.076s
+ok  	net/url	0.048s
+ok  	os	4.234s
+ok  	os/exec	2.739s
+ok  	os/signal	0.519s
+ok  	os/user	0.044s
+ok  	path	0.030s
+ok  	path/filepath	0.440s
+ok  	reflect	1.082s
+ok  	regexp	1.394s
+ok  	regexp/syntax	6.742s
+ok  	runtime	109.894s
+?   	runtime/cgo	[no test files]
+ok  	runtime/debug	0.052s
+ok  	runtime/pprof	19.319s
+?   	runtime/race	[no test files]
+ok  	sort	0.921s
+ok  	strconv	4.795s
+ok  	strings	1.598s
+ok  	sync	0.475s
+ok  	sync/atomic	0.279s
+ok  	syscall	0.119s
+ok  	testing	0.024s
+?   	testing/iotest	[no test files]
+ok  	testing/quick	0.681s
+ok  	text/scanner	0.057s
+ok  	text/tabwriter	0.050s
+ok  	text/template	0.372s
+ok  	text/template/parse	0.104s
+ok  	time	7.694s
+ok  	unicode	0.036s
+ok  	unicode/utf16	0.024s
+ok  	unicode/utf8	0.060s
+?   	unsafe	[no test files]
+
+real	23m28.574s
+user	19m24.440s
+sys	1m51.110s
+
+# GOMAXPROCS=2 runtime -cpu=1,2,4
+ok  	runtime	315.478s
+
+# sync -cpu=10
+ok  	sync	0.867s
+
+# ../misc/cgo/stdio
+
+# ../misc/cgo/life
+
+# ../misc/cgo/test
+PASS
+ok  	_/usr/local/go/misc/cgo/test	3.208s
+PASS
+ok  	_/usr/local/go/misc/cgo/test	3.185s
+PASS
+ok  	_/usr/local/go/misc/cgo/test	3.128s
+ok  	_/usr/local/go/misc/cgo/testtls	0.032s
+ok  	_/usr/local/go/misc/cgo/testtls	0.030s
+
+# ../misc/cgo/testcdefs
+
+# ../misc/cgo/testso
+
+# ../misc/cgo/errors
+
+# ../doc/progs
+
+real	3m5.037s
+user	1m59.890s
+sys	0m13.810s
+
+# ../doc/codewalk
+
+real	0m29.092s
+user	0m26.660s
+sys	0m1.810s
+
+# ../misc/goplay
+
+# ../test/bench/go1
+ok  	_/usr/local/go/test/bench/go1	25.796s
+
+# ../test
+
+real	23m19.279s
+user	18m58.990s
+sys	2m10.590s
+
+# Checking API compatibility.
+Go version is "go1.2", ignoring -next /usr/local/go/api/next.txt
+
+real	2m55.355s
+user	2m30.990s
+sys	0m7.850s
+
+ALL TESTS PASSED
+
+---
+Installed Go for linux/arm in /usr/local/go
+Installed commands in /usr/local/go/bin
+*** You need to add /usr/local/go/bin to your PATH.
